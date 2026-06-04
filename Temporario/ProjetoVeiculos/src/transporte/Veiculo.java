@@ -1,0 +1,25 @@
+package transporte;
+
+public class Veiculo {
+	private String marca;
+	private int ano;
+	
+	public String getMarca() {
+		return marca;
+	}
+	public void setMarca(String marca) {
+		if(marca != null && !marca.isEmpty()) {
+			this.marca = marca;
+		}
+	}
+	public int getAno() {
+		return ano;
+	}
+	public void setAno(int ano) {
+		if(ano > 1886) {
+			this.ano = ano;
+		}
+	}
+	
+	
+}
